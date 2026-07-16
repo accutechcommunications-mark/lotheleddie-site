@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Thank You for Your Donation | Lothel Eddie</title>
+  <meta
+    name="description"
+    content="Thank you for supporting Lothel Eddie. Your gift helps fund Gospel-centered mission work locally, regionally, and globally."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2A44'/%3E%3Cpath d='M8 22 L16 10 L24 22 M11 22 L16 14 L21 22' stroke='%23C9A24A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <div class="success-shell">
+        <p class="eyebrow">Thank you</p>
+        <h1 class="section-title" id="successTitle">Confirming your donation…</h1>
+        <p class="section-lede" id="successMessage">
+          We’re verifying your Stripe checkout session now.
+        </p>
+
+        <div class="success-card" id="successCard" hidden>
+          <dl class="success-meta">
+            <div>
+              <dt>Status</dt>
+              <dd id="successStatus">Confirmed</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd id="successEmail">—</dd>
+            </div>
+            <div>
+              <dt>Amount</dt>
+              <dd id="successAmount">—</dd>
+            </div>
+            <div>
+              <dt>Type</dt>
+              <dd id="successType">—</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="form-error" id="successError" hidden>
+          <strong>We could not verify your donation yet.</strong>
+          <p>
+            If you completed payment, please check your email receipt from Stripe. You can also contact
+            <a href="mailto:contact@lotheleddie.org">contact@lotheleddie.org</a>.
+          </p>
+        </div>
+
+        <div class="success-actions">
+          <a href="index.html" class="btn btn-primary">Return Home</a>
+          <a href="index.html#services" class="btn btn-ghost">See the Work</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const sessionId = params.get('session_id');
+
+      const title = document.getElementById('successTitle');
+      const message = document.getElementById('successMessage');
+      const successCard = document.getElementById('successCard');
+      const successError = document.getElementById('successError');
+      const successStatus = document.getElementById('successStatus');
+      const successEmail = document.getElementById('successEmail');
+      const successAmount = document.getElementById('successAmount');
+      const successType = document.getElementById('successType');
+
+      if (!sessionId) {
+        title.textContent = 'Thank you for your support.';
+        message.textContent = 'We did not receive a session reference in the URL, so we could not verify this donation automatically.';
+        successError.hidden = false;
+        return;
+      }
+
+      try {
+        const response = await fetch(`/api/session-status?session_id=${encodeURIComponent(sessionId)}`, {
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Unable to verify checkout session.');
+        }
+
+        title.textContent = 'Thank you for your donation.';
+        message.textContent = 'Your gift has been received and helps support Gospel-centered work through Lothel Eddie.';
+
+        successStatus.textContent = data.paymentStatus === 'paid' ? 'Confirmed' : (data.paymentStatus || 'Pending');
+        successEmail.textContent = data.customerEmail || 'Not provided';
+        successAmount.textContent = data.amountFormatted || '—';
+        successType.textContent = data.mode === 'subscription' ? 'Monthly donation' : 'One-time donation';
+
+        successCard.hidden = false;
+      } catch (error) {
+        title.textContent = 'Thank you for your support.';
+        message.textContent = 'Your browser returned successfully, but we could not confirm the donation details from Stripe.';
+        successError.hidden = false;
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "lotheleddie-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "stripe": "^18.3.0"
+  }
+}

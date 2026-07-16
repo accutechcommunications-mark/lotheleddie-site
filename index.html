@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lothel Eddie — Opening Doors, Creating Opportunity, Carrying the Gospel Forward</title>
+  <meta name="description" content="Equipping, Empowering and Enabling those who carry the Gospel: Lothel Eddie works to fund and support mission work globally." />
+  <link rel="canonical" href="https://lotheleddie.org/" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lothel Eddie — Opening Doors, Creating Opportunity, Carrying the Gospel Forward" />
+  <meta property="og:description" content="Equipping, Empowering and Enabling those who carry the Gospel: Lothel Eddie works to fund and support mission work globally." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lotheleddie.org/" />
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+      {
+    "@context": "https://schema.org",
+    "@type": "Nonprofit",
+    "name": "Lothel Eddie",
+    "description": "Supporting Gospel Missions in the Upstate, in the Southeast, and Globally.",
+    "url": "https://lotheleddie.org/",
+    "email": "contact@lotheleddie.org",
+    "areaServed": { "@type": "State", "name": "  South Carolina" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Greenville",
+      "addressRegion": "SC",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@lotheleddie.org",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    }
+  }
+  </script>
+  <script src="script.js" defer></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet" />
+  <script>
+    // Apply saved accessibility preference before paint to avoid flash
+    (function () {
+      try {
+        var pref = localStorage.getItem('lotheleddie-a11y');
+        if (pref === 'hyperlegible') document.documentElement.setAttribute('data-a11y', 'hyperlegible');
+      } catch (e) {}
+    })();
+  </script>
+
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2A44'/%3E%3Cpath d='M8 22 L16 10 L24 22 M11 22 L16 14 L21 22' stroke='%23C9A24A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Lothel Eddie home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="currentColor"/>
+          <path d="M8 22 L16 10 L24 22 M11 22 L16 14 L21 22" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="brand-name">Lothel Eddie</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services">Ministries</a>
+        <a href="#why">Why Lothel Eddie</a>
+        <a href="#about">About</a>
+        <button type="button" class="a11y-toggle" aria-pressed="false" aria-label="Turn on accessible font (Atkinson Hyperlegible)" title="Accessible font">
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10" cy="10" r="8"/>
+            <path d="M10 2 A8 8 0 0 1 10 18" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>Accessible font</span>
+        </button>
+        <a
+        href="https://portal.lotheleddie.org"
+        class="nav-portal"
+        aria-label="Client and staff portal (sign-in required)"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          <svg class="nav-portal-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="7" width="10" height="7" rx="1.2"/>
+            <path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/>
+          </svg>
+          <span>Portal</span>
+        </a>
+        <button
+  type="button"
+  class="btn btn-primary give-cta js-open-donate"
+  data-modal-target="donationModal"
+  aria-haspopup="dialog"
+  aria-controls="donationModal"
+>
+  Give Today
+</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+  <div class="container" id="donationCancelNotice" hidden>
+    <div class="form-error cancel-notice" role="status" aria-live="polite">
+      <strong>Donation not completed.</strong>
+      <p>You returned from checkout before finishing your donation. You can try again whenever you're ready.</p>
+    </div>
+  </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Kenya · Nairobi & Machakos</p>
+        <!-- <p class="eyebrow">South Carolina · Founded 2026</p> -->
+                <h1 class="hero-title">
+          Lothel Eddie: <br/>Opening Doors, Creating Opportunity,<br/>Carrying the Gospel <em>Forward</em>.
+        </h1>
+        <p class="hero-lede">
+          Equipping, Empowering and Enabling those who carry the Gospel: Lothel Eddie works to fund and support mission work globally.
+        </p>
+        <div class="hero-cta">
+<button
+  type="button"
+  class="btn btn-primary give-cta js-open-donate"
+  data-modal-target="donationModal"
+  aria-haspopup="dialog"
+  aria-controls="donationModal"
+>
+  Give Today
+</button>
+          <a href="#services" class="btn btn-ghost">See us at work</a>
+        </div>
+      </div>
+      <!-- <div class="hero-decor" aria-hidden="true">
+        <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#0F2A44" stop-opacity="0.08"/>
+              <stop offset="1" stop-color="#0F2A44" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 280 L120 200 L240 240 L360 160 L480 220 L600 140 L720 200 L800 180 L800 400 L0 400 Z" fill="url(#ridge)"/>
+          <path d="M0 320 L100 260 L220 290 L340 220 L460 270 L580 210 L700 250 L800 240 L800 400 L0 400 Z" fill="url(#ridge)"/>
+        </svg>
+      </div>
+    -->
+    </section>
+
+    <!-- SERVICES -->
+<section id="services" class="section section-services">
+  <div class="container split-section split-section--hero">
+    <div class="split-copy">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2 class="section-title">Born Locally. Focused Regionally. At Work Globally.</h2>
+        <p class="section-lede">
+          We are fully transparent, completely accountable, and driven by one purpose: to further the Gospel.
+        </p>
+      </div>
+
+      <div class="services-grid services-grid--two">
+        <article class="service-card service-card--feature">
+          <div class="service-num">01</div>
+          <h3>Global</h3>
+          <p class="service-tagline">Hands on work in Nairobi and Machakos.</p>
+          <ul class="service-list">
+            <li>Micro-business funding in Nairobi</li>
+            <li>Food and shelter for impoverished children</li>
+            <li>Kiambu Christian Academy</li>
+            <li>Literacy training</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-num">02</div>
+          <h3>Regional & Local</h3>
+          <p class="service-tagline">Support across the Upstate and Southeast.</p>
+          <ul class="service-list">
+            <li>Disaster relief and recovery</li>
+            <li>Medical support for indigent South Carolinians</li>
+            <li>Technical training for at-risk youth</li>
+            <li>Communication support for ministry teams</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="split-media split-media--overlap">
+      <figure class="media-card media-card--one">
+        <img src="./assets/NairobiZebra.jpeg" alt="Zebras in front of the Nairobi skyline" loading="lazy" />
+      </figure>
+      <figure class="media-card media-card--two">
+        <img src="./assets/childrens-home.jpg" alt="Mission work in Kenya" loading="lazy" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- WHY -->
+<section id="why" class="section section-why">
+  <div class="container split-section split-section--reverse">
+    <div class="split-media photo-grid photo-grid--four">
+      <figure><img src="./assets/photo-1.jpg" alt="Community support work" loading="lazy" /></figure>
+      <figure><img src="./assets/photo-2.jpg" alt="Children receiving care" loading="lazy" /></figure>
+      <figure><img src="./assets/photo-3.jpg" alt="Volunteers serving meals" loading="lazy" /></figure>
+      <figure><img src="./assets/photo-4.jpg" alt="Mission team gathering" loading="lazy" /></figure>
+    </div>
+
+    <div class="split-copy">
+      <div class="section-head">
+        <p class="eyebrow">Why Lothel Eddie</p>
+        <h2 class="section-title">Dirty hands carry the Gospel best..</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <h3>We fund people serving people.</h3>
+          <p>Putting resources in the hands that carry the Gospel to those most in need.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <h3>Transparency at the foundation.</h3>
+          <p>We know the work intimately, so donors know where support goes.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <h3>We live in the communities we serve.</h3>
+          <p>Our teams are accountable to the people around them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ABOUT -->
+<section id="about" class="section section-about">
+  <div class="container">
+      <!-- position: relative;
+      z-index: 1;-->
+    <div class="split-section">
+      <div class="split-copy">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Local roots. Global reach.</h2>
+        <p>Lothel Eddie is based in the South Carolina Upstate...</p>
+        <p>We started Lothel Eddie because we kept seeing the same gap...</p>
+      </div>
+
+      <div class="split-media photo-grid photo-grid--four">
+        <figure><img src="./assets/about-1.jpg" alt="Mission leaders in conversation" loading="lazy" /></figure>
+        <figure><img src="./assets/about-2.jpg" alt="Children gathered outdoors" loading="lazy" /></figure>
+        <figure><img src="./assets/about-3.jpg" alt="Supplies being distributed" loading="lazy" /></figure>
+        <figure><img src="./assets/about-4.jpg" alt="Community prayer gathering" loading="lazy" /></figure>
+      </div>
+    </div>
+
+    <aside class="about-band">
+      <h3>Lothel Eddie at a glance</h3>
+      <dl class="about-band-grid">
+        <div><dt>Headquarters</dt><dd>Travelers Rest, SC</dd></div>
+        <div><dt>501c(3)</dt><dd>Your donations are fully tax deductible</dd></div>
+        <div><dt>Where we serve</dt><dd>Locally in the Upstate, across the Southeast, and globally in Kenya and other distressed areas.</dd></div>
+        <div><dt>Our focus</dt><dd>Funding local people doing missions, equipping workers, and communications support.</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <div class="contact-text">
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="section-title">Connect with Lothel Eddie.</h2>
+          <p>
+            Tell us how you'd like to connect — whether you have questions about giving, mission support, volunteering, or the work we are funding.
+          </p>
+          <ul class="contact-meta">
+            <li><strong>Phone</strong><br/><a href="tel:+18645551234">(864) 555&#8209;1234</a></li>
+            <li><strong>Email</strong><br/><a href="mailto:contact@lotheleddie.org">contact@lotheleddie.org</a></li>
+            <li><strong>Hours</strong><br/>Mon&ndash;Fri · 8a&ndash;6p ET</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xykldzwn" method="POST" novalidate>
+          <!-- Formspree subject line -->
+          <input type="hidden" name="_subject" value="New consultation request — Lothel Eddie" />
+          <!-- Honeypot: real users won't fill this; bots will -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="company">Company (Optional)</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          </div>
+          <div class="field field-full">
+            <label for="interest">How can I get involved?</label>
+            <select id="interest" name="interest">
+              <option value="">Select one…</option>
+              <option>Volunteer as a Trainer</option>
+              <option>Donate tools or services</option>
+              <option>Missions in Kenya: Get involved</option>
+              <option>Become a monthly partner</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="message">A bit about your situation</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we pray for you and your family? Can we help you get to know Jesus?"></textarea>
+          </div>
+          <div class="field field-full form-actions">
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send your message</button>
+            <p class="form-note">We'll respond within one business day. No spam, no automated drip emails &mdash; a real reply from a real person who really cares about you and your family.</p>
+          </div>
+          <div class="form-success" id="formSuccess" hidden>
+            <strong>Thanks — your message is in.</strong>
+            <p>We'll get back to you within one business day at the email you provided.</p>
+          </div>
+          <div class="form-error" id="formError" hidden>
+            <strong>Something went wrong.</strong>
+            <p>We couldn't submit your message. Please try again, or email us directly at <a href="mailto:contact@lotheleddie.org">contact@lotheleddie.org</a>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+        <!-- DONATION MODAL -->
+  <div
+    id="donationModal"
+    class="modal"
+    aria-hidden="true"
+    aria-modal="true"
+    role="dialog"
+    aria-labelledby="donationModalTitle"
+    aria-describedby="donationModalDescription"
+  >
+    <div class="modal__backdrop" data-close-modal></div>
+
+    <div class="modal__panel" role="document">
+      <button
+        id="closeDonateModal"
+        class="modal__close"
+        type="button"
+        aria-label="Close donation form"
+      >
+        &times;
+      </button>
+
+      <h2 id="donationModalTitle">Make a Donation</h2>
+      <p id="donationModalDescription" class="modal__intro">
+        Choose your gift amount and continue to secure Stripe checkout.
+      </p>
+
+      <form id="donationForm" class="donation-form" novalidate>
+        <div class="form-row">
+          <label for="donationAmount">Donation amount</label>
+          <div class="amount-wrap">
+            <span class="currency">$</span>
+            <input
+              id="donationAmount"
+              name="amount"
+              type="number"
+              min="1"
+              step="1"
+              inputmode="numeric"
+              placeholder="50"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="preset-row" aria-label="Suggested donation amounts">
+          <button type="button" class="preset-amount" data-amount="25">$25</button>
+          <button type="button" class="preset-amount" data-amount="50">$50</button>
+          <button type="button" class="preset-amount" data-amount="100">$100</button>
+          <button type="button" class="preset-amount" data-amount="250">$250</button>
+        </div>
+
+        <div class="form-row">
+          <label for="donationFrequency">Donation type</label>
+          <select id="donationFrequency" name="frequency" required>
+            <option value="one_time">One-time</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="donorName">Full name</label>
+          <input
+            id="donorName"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="donorEmail">Email address</label>
+          <input
+            id="donorEmail"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="donationMessage">Message (optional)</label>
+          <textarea
+            id="donationMessage"
+            name="message"
+            rows="3"
+            placeholder="Share a note or prayer request"
+          ></textarea>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="anonymousDonation" name="anonymous" />
+          <span>Make this donation anonymous</span>
+        </label>
+
+        <div id="donationError" class="form-error" aria-live="polite"></div>
+
+        <button id="submitDonation" type="submit" class="btn btn-primary btn-block">
+          Continue to Secure Checkout
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="currentColor"/>
+          <path d="M8 22 L16 10 L24 22 M11 22 L16 14 L21 22" stroke="#C9A24A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <div>
+          <p class="footer-name">Lothel Eddie</p>
+          <p class="footer-tag">Opening doors, creating opportunity, carrying the Gospel forward.</p>   
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>Greenville,   South Carolina</p>
+        <p><a href="mailto:info@lotheleddie.org">contact@lotheleddie.org</a></p>
+        <p>&copy; 2026 Accutech IT, LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script data-pplx-inline-edit>
+  (function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+    <!-- BEGIN OUR ANTI-HACKING CODE -->
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="transform:translate(-${scrollX}px,-${scrollY}px);transform-origin:top left">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+</script></body>
+</html>
