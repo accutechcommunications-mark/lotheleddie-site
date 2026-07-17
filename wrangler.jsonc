@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "lotheleddie",
+  "name": "lotheleddie-site",
   "compatibility_date": "2026-05-20",
   "observability": {
     "enabled": true
@@ -10,5 +10,6 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
-  ]
+  ],
+  "preview_urls": true
 }
