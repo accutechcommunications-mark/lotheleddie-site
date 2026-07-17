@@ -129,15 +129,19 @@ button {
 /* Container scales to the image size and isolates the layout */
 .cf-image-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 /* Ensures the image is responsive and blocks extra spacing */
 .cf-image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
 }
 
 /* Light gray panel covers the image and starts completely hidden */
@@ -246,8 +250,8 @@ button {
   background: #fff;
 }
 
-.media-card img,
-.photo-grid img {
+.media-card .cf-image,
+.photo-grid .cf-image {
   display: block;
   width: 100%;
   height: 100%;
