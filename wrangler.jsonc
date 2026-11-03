@@ -6,6 +6,10 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
+  "vars": {
+    "ACCESS_TEAM_DOMAIN": "coventrysystems.cloudflareaccess.com",
+    "ACCESS_AUD": "92af482b41ed243a829f7a1118465c976b5c02febd1b3b66bb7278453819f67f"
+  },
   "kv_namespaces": [
     {
       "binding": "CONTENT_KV",
