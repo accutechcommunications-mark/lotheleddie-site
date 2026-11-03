@@ -43,7 +43,20 @@
   }
 
   async function api(path, options) {
-    const res = await fetch(path, Object.assign({ credentials: 'same-origin' }, options));
+    let res;
+    try {
+      res = await fetch(path, Object.assign({ credentials: 'same-origin', redirect: 'manual' }, options));
+    } catch (e) {
+      const err = new Error('Could not reach the server. Check your connection and try again.');
+      err.status = 0;
+      throw err;
+    }
+    // Without a valid Access session the request is redirected to the login page.
+    if (res.type === 'opaqueredirect' || res.status === 302) {
+      const err = new Error('Sign-in required.');
+      err.status = 401;
+      throw err;
+    }
     let data = null;
     try { data = await res.json(); } catch (e) { /* non-JSON */ }
     if (!res.ok) {
