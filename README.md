@@ -36,6 +36,7 @@ Open `https://lotheleddie.org/admin/` to edit text and photos in place. Each tex
 1. **Storage (done):** KV namespace `lotheleddie-content` and R2 bucket `lothel-eddie-public` (photos live under the `img/` prefix). Both are bound in `wrangler.jsonc` as `CONTENT_KV` and `MEDIA_BUCKET`; with a Pages `wrangler.jsonc` those bindings apply to every Git deploy, and dashboard-set bindings and variables are ignored.
 2. **Access:** Zero Trust > Access > Applications > Add self-hosted application for `lotheleddie.org` with paths `/admin/*` and `/api/admin/*`. Policy: Allow, Include > Emails (the approved editors). Login method: One-time PIN.
 3. **Variables:** because `wrangler.jsonc` is the source of truth, add `ACCESS_TEAM_DOMAIN` (e.g. `yourteam.cloudflareaccess.com`) and `ACCESS_AUD` (the application's Audience tag) under `vars` in `wrangler.jsonc` and push. Without them every admin call is rejected.
+   Currently set: team domain `coventrysystems.cloudflareaccess.com`, with the Access application covering `lotheleddie-site.pages.dev` (add the `lotheleddie.org` hostname when the custom domain goes live).
 4. Deploy, open `/admin/`, sign in with an allowed email.
 
 Photos upload as JPEG (the browser converts JPG, PNG, WebP, GIF and BMP and resizes to 2000 px max).
@@ -44,6 +45,7 @@ Photos upload as JPEG (the browser converts JPG, PNG, WebP, GIF and BMP and resi
 
 - Platform: Cloudflare Pages + Pages Functions
 - Wrangler config: `wrangler.jsonc` (`pages_build_output_dir: ./public`; set the Pages project's build output directory to `public`)
+- Git: `accutechcommunications-mark/lotheleddie-site`, production branch `main`; pushes deploy automatically. Build command `npm ci` (installs `stripe` for the Functions), output directory `public`.
 - Required secret: `STRIPE_SECRET_KEY`
 
 ## Canonical Host Strategy
