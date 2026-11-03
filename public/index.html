@@ -39,6 +39,7 @@
   }
   </script>
   <script src="script.js" defer></script>
+  <script src="content.js" defer></script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,7 +70,7 @@
         <span class="brand-name">Lothel Eddie</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#services">Ministries</a>
+        <a href="#services" data-section-link="services" hidden>Ministries</a>
         <a href="#why">Why Lothel Eddie</a>
         <a href="#about">About</a>
         <button type="button" class="a11y-toggle" aria-pressed="false" aria-label="Turn on accessible font (Atkinson Hyperlegible)" title="Accessible font">
@@ -116,12 +117,11 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Kenya · Nairobi & Machakos</p>
-          <!-- <p class="eyebrow">South Carolina · Founded 2026</p> -->
-          <h1 class="hero-title">
+          <p class="eyebrow" data-text="hero.eyebrow">Kenya · Nairobi & Machakos</p>
+          <h1 class="hero-title" data-text="hero.title">
             Lothel Eddie: <br/>Opening Doors, Creating Opportunity,<br/>Carrying the Gospel <em>Forward</em>.
           </h1>
-          <p class="hero-lede">
+          <p class="hero-lede" data-text="hero.lede">
             Equipping, Empowering and Enabling those who carry the Gospel: Lothel Eddie works to fund and support mission work globally.
           </p>
           <div class="hero-cta">
@@ -134,11 +134,11 @@
             >
               Give Today
             </button>
-            <a href="#services" class="btn btn-ghost">See us at work</a>
+            <a href="#services" class="btn btn-ghost" data-section-link="services" hidden>See us at work</a>
           </div>
         </div>
         <div class="hero-image" aria-hidden="true">
-          <img src="./assets/threecrosses.jpg" alt="Three crosses" />
+          <img src="./assets/threecrosses.jpg" alt="Three crosses" data-img="hero.image" />
         </div>
       </div>
       <!-- <div class="hero-decor" aria-hidden="true">
@@ -157,13 +157,13 @@
     </section>
 
     <!-- SERVICES -->
-<section id="services" class="section section-services">
+<section id="services" class="section section-services" data-section="services" hidden>
   <div class="container split-section split-section--hero">
     <div class="split-copy">
       <div class="section-head">
-        <p class="eyebrow">What we do</p>
-        <h2 class="section-title">Born Locally. Focused Regionally. At Work Globally.</h2>
-        <p class="section-lede">
+        <p class="eyebrow" data-text="services.eyebrow">What we do</p>
+        <h2 class="section-title" data-text="services.title">Born Locally. Focused Regionally. At Work Globally.</h2>
+        <p class="section-lede" data-text="services.lede">
           We are fully transparent, completely accountable, and driven by one purpose: to further the Gospel.
         </p>
       </div>
@@ -198,8 +198,7 @@
     <div class="split-media split-media--overlap">
       <figure class="media-card media-card--one">
         <div class="cf-image-wrapper">
-         <!--<img src="your-image-url.jpg" alt="Zebras in front of the Nairobi skyline" class="cf-image">-->
-         <img src="./assets/NairobiZebra.jpeg" alt="Zebras in front of the Nairobi skyline" loading="lazy" class="cf-image"/>
+         <img src="./assets/NairobiZebra.jpeg" alt="Zebras in front of the Nairobi skyline" loading="lazy" class="cf-image" data-img="services.image1"/>
             <div class="cf-hover-panel">
               <p class="cf-hover-text">Zebras in front of the Nairobi skyline.</p>
             </div>
@@ -208,7 +207,7 @@
       </figure>
       <figure class="media-card media-card--two">
         <div class="cf-image-wrapper">
-          <img src="./assets/childrens-home.jpg" alt="Missions work in Machakos" loading="lazy" class="cf-image"/>
+          <img src="./assets/childrens-home.jpg" alt="Missions work in Machakos" loading="lazy" class="cf-image" data-img="services.image2"/>
           <div class="cf-hover-panel">
             <p class="cf-hover-text">Missions work in Machakos</p>
           </div>
@@ -224,7 +223,7 @@
     <div class="split-media photo-grid photo-grid--four">
       <figure>
         <div class="cf-image-wrapper">
-          <img src="./assets/photo-1.jpg" alt="Job Training Program near Kiambu" loading="lazy" class="cf-image"/>
+          <img src="./assets/photo-1.jpg" alt="Job Training Program near Kiambu" loading="lazy" class="cf-image" data-img="why.image1"/>
           <div class="cf-hover-panel">
             <p class="cf-hover-text">Job Training Program near Kiambu</p>
           </div>
@@ -232,7 +231,7 @@
       </figure>
       <figure>
         <div class="cf-image-wrapper">
-          <img src="./assets/photo-2.jpg" alt="Mission Kenya - the team" loading="lazy" class="cf-image"/>
+          <img src="./assets/photo-2.jpg" alt="Mission Kenya - the team" loading="lazy" class="cf-image" data-img="why.image2"/>
           <div class="cf-hover-panel">
             <p class="cf-hover-text">Mission Kenya - the team</p>
           </div>
@@ -240,7 +239,7 @@
       </figure>
       <figure>
         <div class="cf-image-wrapper">
-          <img src="./assets/photo-3.jpg" alt="Combatting Food Insufficiency in the Upstate" loading="lazy" class="cf-image"/>
+          <img src="./assets/photo-3.jpg" alt="Combatting Food Insufficiency in the Upstate" loading="lazy" class="cf-image" data-img="why.image3"/>
           <div class="cf-hover-panel">
             <p class="cf-hover-text">Combatting Food Insufficiency in the Upstate</p>
           </div>
@@ -248,7 +247,7 @@
       </figure>
       <figure>
         <div class="cf-image-wrapper">
-          <img src="./assets/photo-4.jpg" alt="Local Pastors and Staff in Southern Kenya" loading="lazy" class="cf-image"/>
+          <img src="./assets/photo-4.jpg" alt="Local Pastors and Staff in Southern Kenya" loading="lazy" class="cf-image" data-img="why.image4"/>
           <div class="cf-hover-panel">
             <p class="cf-hover-text">Local Pastors and Staff in Southern Kenya</p>
           </div>
@@ -258,25 +257,25 @@
 
     <div class="split-copy">
       <div class="section-head">
-        <p class="eyebrow">Why Lothel Eddie</p>
-        <h2 class="section-title">Dirty hands carry the Gospel best..</h2>
+        <p class="eyebrow" data-text="why.eyebrow">Why Lothel Eddie</p>
+        <h2 class="section-title" data-text="why.title">Dirty hands carry the Gospel best..</h2>
       </div>
 
       <div class="why-grid">
         <div class="why-item">
           <div class="why-num">01</div>
-          <h3>We fund people serving people.</h3>
-          <p>Putting resources in the hands that carry the Gospel to those most in need.</p>
+          <h3 data-text="why.item1.title">We fund people serving people.</h3>
+          <p data-text="why.item1.body">Putting resources in the hands that carry the Gospel to those most in need.</p>
         </div>
         <div class="why-item">
           <div class="why-num">02</div>
-          <h3>Transparency at the foundation.</h3>
-          <p>We know the work intimately, so donors know where support goes.</p>
+          <h3 data-text="why.item2.title">Transparency at the foundation.</h3>
+          <p data-text="why.item2.body">We know the work intimately, so donors know where support goes.</p>
         </div>
         <div class="why-item">
           <div class="why-num">03</div>
-          <h3>We live in the communities we serve.</h3>
-          <p>Our teams are accountable to the people around them.</p>
+          <h3 data-text="why.item3.title">We live in the communities we serve.</h3>
+          <p data-text="why.item3.body">Our teams are accountable to the people around them.</p>
         </div>
       </div>
     </div>
@@ -290,16 +289,16 @@
       z-index: 1;-->
     <div class="split-section">
       <div class="split-copy">
-        <p class="eyebrow">About</p>
-        <h2 class="section-title">Local roots. Global reach.</h2>
-        <p>Lothel Eddie is based in the South Carolina Upstate...</p>
-        <p>We started Lothel Eddie because we kept seeing the same gap...</p>
+        <p class="eyebrow" data-text="about.eyebrow">About</p>
+        <h2 class="section-title" data-text="about.title">Local roots. Global reach.</h2>
+        <p data-text="about.body1">Lothel Eddie is based in the South Carolina Upstate...</p>
+        <p data-text="about.body2">We started Lothel Eddie because we kept seeing the same gap...</p>
       </div>
 
       <div class="split-media photo-grid photo-grid--four">
         <figure>
           <div class="cf-image-wrapper">
-            <img src="./assets/about-1.jpg" alt="Mission Leaders in Training" loading="lazy" class="cf-image"/>
+            <img src="./assets/about-1.jpg" alt="Mission Leaders in Training" loading="lazy" class="cf-image" data-img="about.image1"/>
             <div class="cf-hover-panel">
               <p class="cf-hover-text">Mission Leaders in Training</p>
             </div>
@@ -307,7 +306,7 @@
         </figure>
         <figure>
           <div class="cf-image-wrapper">
-            <img src="./assets/about-2.jpg" alt="Backyard Bible Clubs - North Georgia" loading="lazy" class="cf-image"/>
+            <img src="./assets/about-2.jpg" alt="Backyard Bible Clubs - North Georgia" loading="lazy" class="cf-image" data-img="about.image2"/>
             <div class="cf-hover-panel">
               <p class="cf-hover-text">Backyard Bible Clubs - North Georgia</p>
             </div>
@@ -315,7 +314,7 @@
         </figure>
         <figure>
           <div class="cf-image-wrapper">
-            <img src="./assets/about-3.jpg" alt="WNC - Food Distribution after Hurricane Helene" loading="lazy" class="cf-image"/>
+            <img src="./assets/about-3.jpg" alt="WNC - Food Distribution after Hurricane Helene" loading="lazy" class="cf-image" data-img="about.image3"/>
             <div class="cf-hover-panel">
               <p class="cf-hover-text">WNC - Food Distribution after Hurricane Helene</p>
             </div>
@@ -323,7 +322,7 @@
         </figure>
         <figure>
           <div class="cf-image-wrapper">
-            <img src="./assets/about-4.jpg" alt="Community prayer gathering in Machakos" loading="lazy" class="cf-image"/>
+            <img src="./assets/about-4.jpg" alt="Community prayer gathering in Machakos" loading="lazy" class="cf-image" data-img="about.image4"/>
             <div class="cf-hover-panel">
               <p class="cf-hover-text">Community prayer gathering in Machakos</p>
             </div>
@@ -333,12 +332,12 @@
     </div>
 
     <aside class="about-band">
-      <h3>Lothel Eddie at a glance</h3>
+      <h3 data-text="about.band.title">Lothel Eddie at a glance</h3>
       <dl class="about-band-grid">
-        <div><dt>Headquarters</dt><dd>Travelers Rest, SC</dd></div>
-        <div><dt>501c(3)</dt><dd>Your donations are fully tax deductible</dd></div>
-        <div><dt>Where we serve</dt><dd>Locally in the Upstate, across the Southeast, and globally in Kenya and other distressed areas.</dd></div>
-        <div><dt>Our focus</dt><dd>Funding local people doing missions, equipping workers, and communications support.</dd></div>
+        <div><dt data-text="about.band.item1.label">Headquarters</dt><dd data-text="about.band.item1.value">Travelers Rest, SC</dd></div>
+        <div><dt data-text="about.band.item2.label">501c(3)</dt><dd data-text="about.band.item2.value">Your donations are fully tax deductible</dd></div>
+        <div><dt data-text="about.band.item3.label">Where we serve</dt><dd data-text="about.band.item3.value">Locally in the Upstate, across the Southeast, and globally in Kenya and other distressed areas.</dd></div>
+        <div><dt data-text="about.band.item4.label">Our focus</dt><dd data-text="about.band.item4.value">Funding local people doing missions, equipping workers, and communications support.</dd></div>
       </dl>
     </aside>
   </div>

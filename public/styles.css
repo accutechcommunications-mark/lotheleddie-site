@@ -1540,3 +1540,8 @@ html[data-a11y="hyperlegible"] .accent-italic {
   margin-top: var(--gap-6);
   margin-bottom: 0;
 }
+
+[data-section][hidden],
+[data-section-link][hidden] {
+  display: none !important;
+}

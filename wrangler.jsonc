@@ -1,15 +1,21 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "lotheleddie-site",
+  "pages_build_output_dir": "./public",
   "compatibility_date": "2026-05-20",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "preview_urls": true
+  "kv_namespaces": [
+    {
+      "binding": "CONTENT_KV",
+      "id": "220dabf5bab04df78b9bc9f72da6203b"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "lothel-eddie-public"
+    }
+  ]
 }

@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev --port 8788 --ip 127.0.0.1"
+  },
   "dependencies": {
     "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.157.0"
   }
 }

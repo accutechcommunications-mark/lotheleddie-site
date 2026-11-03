@@ -1,0 +1,48 @@
+{
+  "_help": "Edit values only. Keep the keys. Images: put the file in /assets and set its name in 'src'. In titles, *word* makes the word italic and \\n starts a new line.",
+  "sections": {
+    "services": { "visible": false }
+  },
+  "text": {
+    "hero.eyebrow": "Kenya · Nairobi & Machakos",
+    "hero.title": "Lothel Eddie:\nOpening Doors, Creating Opportunity,\nCarrying the Gospel *Forward*.",
+    "hero.lede": "Equipping, Empowering and Enabling those who carry the Gospel: Lothel Eddie works to fund and support mission work globally.",
+    "services.eyebrow": "What we do",
+    "services.title": "Born Locally. Focused Regionally. At Work Globally.",
+    "services.lede": "We are fully transparent, completely accountable, and driven by one purpose: to further the Gospel.",
+    "why.eyebrow": "Why Lothel Eddie",
+    "why.title": "Dirty hands carry the Gospel best..",
+    "why.item1.title": "We fund people serving people.",
+    "why.item1.body": "Putting resources in the hands that carry the Gospel to those most in need.",
+    "why.item2.title": "Transparency at the foundation.",
+    "why.item2.body": "We know the work intimately, so donors know where support goes.",
+    "why.item3.title": "We live in the communities we serve.",
+    "why.item3.body": "Our teams are accountable to the people around them.",
+    "about.eyebrow": "About",
+    "about.title": "Local roots. Global reach.",
+    "about.body1": "Lothel Eddie is based in the South Carolina Upstate...",
+    "about.body2": "We started Lothel Eddie because we kept seeing the same gap...",
+    "about.band.title": "Lothel Eddie at a glance",
+    "about.band.item1.label": "Headquarters",
+    "about.band.item1.value": "Travelers Rest, SC",
+    "about.band.item2.label": "501c(3)",
+    "about.band.item2.value": "Your donations are fully tax deductible",
+    "about.band.item3.label": "Where we serve",
+    "about.band.item3.value": "Locally in the Upstate, across the Southeast, and globally in Kenya and other distressed areas.",
+    "about.band.item4.label": "Our focus",
+    "about.band.item4.value": "Funding local people doing missions, equipping workers, and communications support."
+  },
+  "images": {
+    "hero.image": { "src": "assets/threecrosses.jpg", "caption": "Three crosses" },
+    "services.image1": { "src": "assets/NairobiZebra.jpeg", "caption": "Zebras in front of the Nairobi skyline" },
+    "services.image2": { "src": "assets/childrens-home.jpg", "caption": "Missions work in Machakos" },
+    "why.image1": { "src": "assets/photo-1.jpg", "caption": "Job Training Program near Kiambu" },
+    "why.image2": { "src": "assets/photo-2.jpg", "caption": "Mission Kenya - the team" },
+    "why.image3": { "src": "assets/photo-3.jpg", "caption": "Combatting Food Insufficiency in the Upstate" },
+    "why.image4": { "src": "assets/photo-4.jpg", "caption": "Local Pastors and Staff in Southern Kenya" },
+    "about.image1": { "src": "assets/about-1.jpg", "caption": "Mission Leaders in Training" },
+    "about.image2": { "src": "assets/about-2.jpg", "caption": "Backyard Bible Clubs - North Georgia" },
+    "about.image3": { "src": "assets/about-3.jpg", "caption": "WNC - Food Distribution after Hurricane Helene" },
+    "about.image4": { "src": "assets/about-4.jpg", "caption": "Community prayer gathering in Machakos" }
+  }
+}
